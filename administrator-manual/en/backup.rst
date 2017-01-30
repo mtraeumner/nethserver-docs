@@ -11,7 +11,7 @@ The system handles two kinds of backup:
 * :index:`data backup`
 
 Configuration backup contains only system configuration files. 
-It's scheduled to be executed every night and it will create a new archive, :file:`/var/lib/nethserver/backup/backup-config.tar.xz`, only if any file is changed in the last 24 hours.
+It's scheduled to be executed every night and it will create a new archive :file:`/var/lib/nethserver/backup/backup-config.tar.xz`, but only if any file is changed in the last 24 hours.
 The configuration backup also saves a list of installed modules. All modules will be reinstalled during the configuration restore process.
 The purpose of this kind of backup is to quickly restore a machine in case of disaster recovery. 
 When the machine is functional, a full data restore can be done even if the machine is already in production.
@@ -99,7 +99,7 @@ There are two options to restore:
 
   /complete/path/of/file_YYYY-MM-DD (YYYY-MM-DD is the date of restore)
 
-To use the search field, simply insert at least 3 chars and the searching starts automatically, highlighting the matched directories
+To use the search field, simply insert at least 3 chars and the searching starts automatically, highlighting the matched directories.
 
 It is possible to restore the directories by clicking on **Restore** button.
 
@@ -280,7 +280,7 @@ Another good command could be: ::
 
  lsblk -io KNAME,TYPE,SIZE,MODEL
 
-In this scenario, the disk is accessibile as *sdc* device.
+In this scenario, the disk is accessible as *sdc* device.
 
 * Create a Linux partition on the whole disk: ::
 
